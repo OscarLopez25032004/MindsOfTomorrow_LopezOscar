@@ -1,0 +1,228 @@
+/* indica el estilo de la página html */
+html {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+}
+/* indican los estilos genéricos para toda la página web (que los padding pasen a ser el width de los div y que no sea aparte) */
+* {
+    box-sizing: border-box;
+}
+/* indica el estilo del body */
+body {
+    margin: 0;
+    margin-bottom: 60px;
+}
+.tituloheader {
+    padding: 20px;
+    height: 100vh;
+    background-image: url("./../img/banner-2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    color: rgb(0, 0, 0);
+    font-size: 2rem;
+    width: 100%;
+    text-align: center;
+    
+}
+/* indica el contenido de la primera fila (las 6 imagenes) */
+.row2 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+/* indica el estilo de la columna del titulo del proyecto */
+.colproy {
+    width: 100%;
+}
+/* indica el estilo del titulo "PROYECTO" */
+.tituloproy {
+    text-align: center;
+    font-size: 0.1rem;
+}
+/* indica el estilo de las columnas de las imagenes de github */
+.column-3 {
+    width: 33.33%;
+    padding: 20px;
+}
+/* indica el estilo de las imagenes de github de la primera fila */
+.widthimggithub {
+    width: 100%;
+}
+/* indica el estilo de la fila azul ("DANOS TU FEEDBACK") */
+.row3 {
+    text-align: center;
+    background-color: rgb(95, 150, 168);
+    color: white;
+    padding: 10px;
+}
+/* indica el estilo del texto de la fila azul ("DANOS TU FEEDBACK") */
+.textorow3-1 {
+    font-size: 0.1;
+}
+/* indica el estilo del texto de la fila azul ("DANOS TU FEEDBACK") */
+.textorow3-2 {
+    font-size: 0.1;
+}
+/* indica el estilo de la fila del google maps */
+.row4 {
+    display: flex;
+    flex-wrap: wrap;
+}
+/* indica el estilo de la fila del google maps (divide la fila en 2 columnas) */
+.column-2 {
+    width: 50%;
+}
+/* indica el estilo de la columna de la izquierda de la cuarta fila (la del google maps) */
+.row4-1,
+.row4-2 {
+  flex: 1;
+}
+/* indica el estilo margin-left utilizado en varias secciones de la web */
+.marginleft {
+    margin-left: 125px;
+}
+/* indica el estilo de los titulos de la fila del google maps */
+.textorow4-1 {
+    font-size: 0.1;
+}
+/* indica el estilo de los parrafos de la fila del google maps */
+.textorow4-2 {
+    font-weight: normal;
+    font-size: 0.1;
+}
+/* indica el estilo de la quinta o ultima fila */
+.row5 {
+    display: flex;
+    background-color: rgb(78, 78, 78);
+    color: white;
+}
+/* indica el estilo que se utiliza para que se vea en la misma fila todo el texto */
+.column {
+    flex: 1;
+}
+/* indica el estilo background-color para la quinta fila */
+.backgroundcolor {
+    background-color: rgb(129, 129, 129);
+}
+/* indica el estilo de la columna derecha de la quinta fila */
+.column-2-2 {
+    display: flex;
+}
+/* indica el estilo de los titulo de la quinta fila */
+.textorow5-1 {
+    color: black;
+    font-size: 0.1;
+    margin-left: 125px;
+}
+/* indica el estilo de las subcolumnas de la quinta */
+.column-4 {
+    flex-basis: 50%;
+    height: 100%;
+}
+/* indica el estilo de los parrafos de la quinta fila */
+.textorow5-2 {
+    font-weight: normal;
+    font-size: 0.1;
+    color: white;
+}
+/* indica el estilo del footer */
+footer {
+	background-color: black;
+	text-align: center;
+	padding: 1px;
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+    font-size: 0.1rem;
+}
+/* indica el estilo del texto del footer */
+.textofooter {
+    font-weight: normal;
+    color: white;
+    font-size: 0.1;
+}
+/* indican las media queries */
+@media screen and (max-width: 600px) {
+    /* indica el cambio de letra al aplicar la media query */
+    html {
+        font-size: 10px;
+    }
+    /* indica la media query del body */
+    body {
+        margin-bottom: 50px;
+    }
+    /* indica la media query del texto del encabezado (para que sea mas pequeña) */
+    .texto1 {
+        top: 20%;
+        left: 50%;
+        font-size: 0.1;
+    }    
+    /* indica la media query de la tercera fila */
+    .row3 {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    /* indica la media query de la cuarta fila (la de google maps) */
+    .row4 {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin-left: -100px;
+    }
+    /* indica la media query del las subcolumnas de la cuarta fila */
+    .row4-1, .row4-2 {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    /* indica la media query de la quinta fila */
+    .row5 {
+        flex-direction: column;
+    }
+    /* indica la media query del primer texto de la quinta fila */
+    .column-1 {
+        width: 100%;
+    }
+    /* indica la media query de la columna de la cuarta fila */
+    .column-2 {
+        width: 100%;
+    }
+    /* indica la medi query de las columnas de las imagenes de github */
+    .column-3 {
+        width: 50%;
+      }
+    /* indica la media query de las subcolumnas de la columa derecha de la quinta fila */
+    .column-4 {
+        flex-basis: 50%;
+    }
+    /* indica la media query de los titulos de la tercera fila */
+    .textorow3-1 {
+        padding: 0px;
+        margin-left: 120px;
+    }
+    /* indica la media query de los parrafos de la tercera fila */
+    .textorow3-2 {
+        margin-left: 5%;
+    }
+    /* indica el estilo del mapa */
+    iframe {
+        margin-left: 105px;
+        width: 142%;
+    }
+    /* indica la media query de los titulos de la quinta fila */
+    .textorow5-1 {
+        color: black;
+        margin-left: 25px;
+    }
+    /* indica la media query de los parrafos de la quinta fila */
+    .textorow5-2 {
+        font-weight: normal;
+        color: white;
+        margin-left: 25px;
+    }
+}
