@@ -1,228 +1,175 @@
-/* indica el estilo de la página html */
+/* indica el estilo css de la página html */
 html {
     font-family: 'Quicksand', sans-serif;
     font-size: 50px;
     font-weight: bold;
+    color: black;
 }
 /* indican los estilos genéricos para toda la página web (que los padding pasen a ser el width de los div y que no sea aparte) */
 * {
     box-sizing: border-box;
 }
-/* indica el estilo del body */
+/* indica el estilo css del body */
 body {
     margin: 0;
-    margin-bottom: 60px;
+    margin-bottom: 130px;
 }
-.tituloheader {
-    padding: 20px;
-    height: 100vh;
+/* indica el estilo css del encabezado de la pagina */
+header {
+    height: 106vh;
     background-image: url("./../img/banner-2.jpg");
     background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: absolute;
-    color: rgb(0, 0, 0);
-    font-size: 2rem;
-    width: 100%;
-    text-align: center;
-    
+    position: relative;
 }
-/* indica el contenido de la primera fila (las 6 imagenes) */
+/* indica el estilo css de los div que se encuentran dentro del encabezado */
+header div {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* indica el estilo css de todos los elementos p de los div que se encuentran dentro del encabezado */
+header div p {
+    font-size: 2.7rem;
+    text-align: center; 
+}
+/* indica el estilo css de todas las filas de la pagina */
 .row2 {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
 }
-/* indica el estilo de la columna del titulo del proyecto */
-.colproy {
-    width: 100%;
-}
-/* indica el estilo del titulo "PROYECTO" */
-.tituloproy {
-    text-align: center;
-    font-size: 0.1rem;
-}
-/* indica el estilo de las columnas de las imagenes de github */
-.column-3 {
-    width: 33.33%;
-    padding: 20px;
-}
-/* indica el estilo de las imagenes de github de la primera fila */
-.widthimggithub {
-    width: 100%;
-}
-/* indica el estilo de la fila azul ("DANOS TU FEEDBACK") */
-.row3 {
-    text-align: center;
-    background-color: rgb(95, 150, 168);
-    color: white;
-    padding: 10px;
-}
-/* indica el estilo del texto de la fila azul ("DANOS TU FEEDBACK") */
-.textorow3-1 {
-    font-size: 0.1;
-}
-/* indica el estilo del texto de la fila azul ("DANOS TU FEEDBACK") */
-.textorow3-2 {
-    font-size: 0.1;
-}
-/* indica el estilo de la fila del google maps */
-.row4 {
-    display: flex;
-    flex-wrap: wrap;
-}
-/* indica el estilo de la fila del google maps (divide la fila en 2 columnas) */
+/* indica el estilo css de la primera y tercera fila y el footer (se divide la fila en 2 columnas) */
 .column-2 {
     width: 50%;
 }
-/* indica el estilo de la columna de la izquierda de la cuarta fila (la del google maps) */
-.row4-1,
-.row4-2 {
-  flex: 1;
-}
-/* indica el estilo margin-left utilizado en varias secciones de la web */
+/* indica el estilo css utilizado en algunas partes de la pagina (da un margin a la izquierda) */
 .marginleft {
-    margin-left: 125px;
+    margin-left: 17%;
 }
-/* indica el estilo de los titulos de la fila del google maps */
-.textorow4-1 {
-    font-size: 0.1;
+/* indica el estilo css de algunos titulos de la pagina */
+.textotitulos {
+    font-size: 1.7rem;
 }
-/* indica el estilo de los parrafos de la fila del google maps */
-.textorow4-2 {
+/* indica el estilo css de algunos contenido de la pagina */
+.textocontenido {
+    font-size: 1.2rem;
     font-weight: normal;
-    font-size: 0.1;
 }
-/* indica el estilo de la quinta o ultima fila */
-.row5 {
-    display: flex;
-    background-color: rgb(78, 78, 78);
-    color: white;
+/* indica el estilo css de un width concreto a las imagenes de la primera sección o fila */
+.widthimgsec1 {
+    width: 90%;
 }
-/* indica el estilo que se utiliza para que se vea en la misma fila todo el texto */
-.column {
-    flex: 1;
+/* indica el estilo css de la segunda sección o fila */
+.sec2 {
+    background-color: rgb(41, 211, 106);
+    justify-content: center;
 }
-/* indica el estilo background-color para la quinta fila */
-.backgroundcolor {
-    background-color: rgb(129, 129, 129);
+/* indica el estilo css de algunos titulos de la pagina */
+.colproy {
+    width: 100%;
 }
-/* indica el estilo de la columna derecha de la quinta fila */
-.column-2-2 {
-    display: flex;
+/* indica el estilo css de algunos titulos de la pagina */
+.tituloproy2 {
+    text-align: center;
+    font-size: 1.8rem;
 }
-/* indica el estilo de los titulo de la quinta fila */
-.textorow5-1 {
-    color: black;
-    font-size: 0.1;
-    margin-left: 125px;
-}
-/* indica el estilo de las subcolumnas de la quinta */
+/* indica el estilo css de la segunda fila (se divide la fila en 4 columnas) */
 .column-4 {
-    flex-basis: 50%;
-    height: 100%;
+    width: 20%;
 }
-/* indica el estilo de los parrafos de la quinta fila */
-.textorow5-2 {
-    font-weight: normal;
-    font-size: 0.1;
-    color: white;
+/* indica el estilo css de algunos contenidos de la pagina */
+.textotitulos2 {
+    font-size: 0.5rem;
+    text-align: center;
+}
+/* indica el estilo css de las imagenes de la segunda sección */
+.widthimgsec2 {
+    width: 90%;
+    margin-left: 7%;
+    margin-top: 15%;
+}
+/* indica el estilo css de la cuarta fila */
+.column-4-1 {
+    width: 25%;
+}
+/* indica el estilo css de las imagenes de la cuarta fila */
+.widthimgsec4 {
+    width: 100%;
+}
+/* indica el estilo css de la quinta sección o fila */
+.sec5 {
+    background-color: rgb(78, 140, 211);
+    margin-top: -5%;
+}
+/* indica el estilo css del titulo de la quinta sección */
+.tituloproy5 {
+    text-align: center;
+    font-size: 2rem;
 }
 /* indica el estilo del footer */
 footer {
 	background-color: black;
-	text-align: center;
-	padding: 1px;
+	padding: 40px;
 	width: 100%;
 	position: fixed;
 	bottom: 0;
 	left: 0;
-    font-size: 0.1rem;
-}
-/* indica el estilo del texto del footer */
-.textofooter {
-    font-weight: normal;
     color: white;
-    font-size: 0.1;
+    font-size: 0.4rem;
+    font-weight: normal;
 }
 /* indican las media queries */
-@media screen and (max-width: 600px) {
-    /* indica el cambio de letra al aplicar la media query */
-    html {
-        font-size: 10px;
-    }
+@media screen and (max-width: 700px) {
     /* indica la media query del body */
     body {
-        margin-bottom: 50px;
+        margin-bottom: 220px;
     }
-    /* indica la media query del texto del encabezado (para que sea mas pequeña) */
-    .texto1 {
-        top: 20%;
-        left: 50%;
-        font-size: 0.1;
-    }    
-    /* indica la media query de la tercera fila */
-    .row3 {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
+    /* indica la media query de todos los elementos p de los div que se encuentran dentro del encabezado */
+    header div p {
+        font-size: 1.7rem;
     }
-    /* indica la media query de la cuarta fila (la de google maps) */
-    .row4 {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        margin-left: -100px;
+    /* indica la media query de algunos titulos de la pagina */
+    .textotitulos {
+        font-size: 1rem;
     }
-    /* indica la media query del las subcolumnas de la cuarta fila */
-    .row4-1, .row4-2 {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
+    /* indica la media query de algunos contenido de la pagina */
+    .textocontenido {
+        font-size: 0.7rem;
     }
-    /* indica la media query de la quinta fila */
-    .row5 {
-        flex-direction: column;
-    }
-    /* indica la media query del primer texto de la quinta fila */
-    .column-1 {
+    /* indica la media query de un width concreto a las imagenes de la primera sección o fila */
+    .widthimgsec1 {
         width: 100%;
     }
-    /* indica la media query de la columna de la cuarta fila */
+    /* indica la media query de algunos titulos de la pagina */
+    .tituloproy2 {
+        font-size: 1.3rem;
+    }
+    /* indica la media query de la primera y tercera fila y el footer */
     .column-2 {
         width: 100%;
     }
-    /* indica la medi query de las columnas de las imagenes de github */
-    .column-3 {
-        width: 50%;
-      }
-    /* indica la media query de las subcolumnas de la columa derecha de la quinta fila */
+    /* indica la media query utilizado en algunas partes de la pagina */
+    .marginleft {
+        margin-left: 10%;
+    }
+        /* indica la media query utilizado en algunas partes de la pagina */
+    .marginleft2 {
+        margin-left: 10%;
+    }
+    /* indica la media query de la segunda fila */
     .column-4 {
-        flex-basis: 50%;
+        width: 50%;
     }
-    /* indica la media query de los titulos de la tercera fila */
-    .textorow3-1 {
-        padding: 0px;
-        margin-left: 120px;
+    /* indica la media query de la cuarta fila */
+    .column-4-1 {
+        width: 50%;
+        margin-top: -2%;
     }
-    /* indica la media query de los parrafos de la tercera fila */
-    .textorow3-2 {
-        margin-left: 5%;
-    }
-    /* indica el estilo del mapa */
-    iframe {
-        margin-left: 105px;
-        width: 142%;
-    }
-    /* indica la media query de los titulos de la quinta fila */
-    .textorow5-1 {
-        color: black;
-        margin-left: 25px;
-    }
-    /* indica la media query de los parrafos de la quinta fila */
-    .textorow5-2 {
-        font-weight: normal;
-        color: white;
-        margin-left: 25px;
+    /* indica la media query del titulo de la quinta sección */
+    .tituloproy5 {
+        font-size: 1rem;
     }
 }
